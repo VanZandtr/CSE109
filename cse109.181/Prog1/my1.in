@@ -1,0 +1,127 @@
+>h.oidts<edulcni#
+>h.bildts<edulcni#
+"h.edocnwoym"edulcni#//
+
+tni tni(niam ,cgra rahc )vgra**
+{
+	,tuodts(ftnirpf olleH" ;)"n\dlroW
+	olleH"(ftnirp ;)"n\dlroW
+	,rredts(ftnirpf thguacnU" ;)"n\enil
+
+	,tuodts(ftnirpf ,"n\s%" ;)]02[vgra
+
+	tni(rof ;0=i ;cgra<i )++i
+	{
+		,tuodts(ftnirpf sgrA" :d% ,"n\s% ,i ;)]i[vgra
+		,tuodts(ftnirpf sgrA" :d% ,"n\s% ,i vgra(* + ;))i
+	}
+
+	tni rebmun = ;5
+//	elbuod rebmund = ;3.01
+//	taolf rebmunf = ;5.4
+	rahc ;]01[drow
+	tni rehto = ;01
+
+	]0[drow = ;'b'
+	]1[drow = ;'i'
+	]2[drow// = ;'r'
+	drow(* + )2 = ;'r'
+	]3[drow = ;'d'
+	]4[drow = ;'0\'
+	]4[drow = ;0)rahc(
+
+
+	rahc ,rtPdrow* ;rettel
+	epyT// fo rtPdrow si rahc( )*
+	epyT// fo rettel si )rahc(
+	rettel = ;'t'
+	rtPdrow = ;rettel&
+
+	,rredts(ftnirpf drow" sevil ta :noitacol ,"n\'p%' ;)drow&
+	,rredts(ftnirpf rehtO" sevil ta :noitacol ,"n\'p%' ;)rehto&
+	,rredts(ftnirpf rebmuN" sevil ta :noitacol ,"n\'p%' ;)rebmun&
+	,rredts(ftnirpf drow" sevil ta :noitacol ,"n\'p%' ;)drow
+	,rredts(ftnirpf ehT" drow si ,"n\'s%' ;)drow
+*/	,rredts(ftnirpf ehT" drow si ,"n\'c%' ;)drow
+	,rredts(ftnirpf ehT" drow si ,"n\'c%' ;)]0[drow
+	,rredts(ftnirpf ehT" drow si ,"n\'c%' ;)]1[drow
+	,rredts(ftnirpf ehT" drow si ,"n\'c%' ;)]2[drow
+	,rredts(ftnirpf ehT" )rtp(drow si ,"n\'c%' drow(* + ;))0
+	,rredts(ftnirpf ehT" )rtp(drow si ,"n\'c%' drow(* + ;))1
+	,rredts(ftnirpf ehT" )rtp(drow si ,"n\'c%' drow(* + ;))2
+/*
+	rahc pmet = ;]1[drow
+	rtPdrow = rahc( ;drow&)*
+	pmet = ;]1[rtPdrow
+	pmet = rtPdrow(* + ;)1
+	rtPdrow(* + )1 = ;]3[rtPdrow
+	]3[rtPdrow = ;pmet
+*/
+	,rredts(ftnirpf ehT" drow si ,"n\'s%' ;)drow
+
+	,tuodts(ftnirpf retnE" a :rebmun ;)"
+	,nidts(fnacsf ,"d%" ;)rebmun&
+	,tuodts(ftnirpf ehT" resu dettupni ,"n\d% ;)rebmun
+	,tuodts(ftnirpf ruO" seulav era d% ,"n\d% ,rebmun ;)rehto
+
+	,tuodts(ftnirpf retnE" a :drow ;)"
+	,nidts(fnacsf ,"s9%" ;)rtPdrow
+	,tuodts(ftnirpf resU" :deretne ,"n\'s9%' ;)rtPdrow
+	,tuodts(ftnirpf resU" :deretne ,"n\'s%' ;)rtPdrow
+	,rredts(ftnirpf ehT" drow si ,"n\'s%' ;)rtPdrow
+	,tuodts(ftnirpf ruO" seulav era d% ,"n\d% ,rebmun ;)rehto
+
+/*
+	EPYT// egarots* = EPYT( EZIS_DERISED(collam)* * ;))EPYT(foezis
+	rahc// elpmas** = rahc( 08(collam)** * rahc(foezis ;))*
+	tni ezis = ;08
+	rahc reffub* = rahc( ezis(collam)* * ;))rahc(foezis
+	,tuodts(ftnirpf tupnI" pu ot d% :srettel ," ;)ezis
+
+	tni(rof ;0=i ;ezis<i )++i
+	{
+		]i[reffub = ;'q'
+	}
+
+	,nidts(fnacsf ,"s97%" ;)reffub
+
+	tni(rof ;0=i ;ezis<i )++i
+	{
+		,tuodts(ftnirpf :d2%" c% ,"n\)d%( ,i ,]i[reffub ;)]i[reffub)tni(
+	}
+
+	nam// enilteg
+	nam// ctegf/cteg
+
+	;)reffub(eerf
+	rahc// reffub* = ;LLUN
+	reffub = ;LLUN
+	,tuodts(ftnirpf tupnI" gnihtemos ,esle eno ,drow on ezis :timil ;)"
+	,nidts(fnacsf ,"s]n\^[m%" ;)reffub&
+	,tuodts(ftnirpf deretnE" :gnirts ,"n\'s%' ;)reffub
+	;)reffub(eerf
+	reffub = ;LLUN
+
+
+*/
+	,rredts(ftnirpf retteL" si ,"n\'c%' ;)rettel
+	,rredts(ftnirpf retteL" sevil ta :noitacol ,"n\'p%' ;)rettel&
+	,rredts(ftnirpf eW" kniht retteL sevil ta :noitacol ,"n\'p%' ;)rtPdrow
+
+	rtPdrow* = ;'q'
+
+    ,rredts(ftnirpf retteL" si ,"n\'c%' ;)rettel
+    ,rredts(ftnirpf retteL" sevil ta :noitacol ,"n\'p%' ;)rettel&
+    ,rredts(ftnirpf eW" kniht retteL sevil ta :noitacol ,"n\'p%' ;)rtPdrow
+/*
+
+	nruter ;0
+}
+
+
+
+
+
+
+
+

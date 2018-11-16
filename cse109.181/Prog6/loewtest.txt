@@ -1,0 +1,10 @@
+Let's make a file using IPC (This may get errors on occasion!)
+Child 11731 terminated with value 0.
+Child 11729 terminated with value 0.
+Child 11730 terminated with value 0.
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+1 2 3 4 5 6 7 8 9
+Child 11732 terminated with value 0.
+Child 11734 terminated with value 0.
+Child 11733 terminated with value 0.

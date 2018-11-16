@@ -1,0 +1,76 @@
+Hash.cpp:34:15: error: expected constructor, destructor, or type conversion before ‘(’ token
+ Hash_t::Hash_t(Hast_t& src)
+               ^
+Hash.cpp:45:1: error: ‘Hash_t::Hash_t’ names the constructor, not the type
+ Hash_t::Hash_t& operator=(const Hash_t& src)
+ ^~~~~~
+Hash.cpp:50:1: error: ‘Hash_t::Hash_t’ names the constructor, not the type
+ Hash_t::Hash_t& operator+=(unsigned int data)
+ ^~~~~~
+Hash.cpp:56:1: error: ‘Hash_t::Hash_t’ names the constructor, not the type
+ Hash_t::Hash_t& operator+=(char data)
+ ^~~~~~
+Hash.cpp:62:1: error: ‘Hash_t::Hash_t’ names the constructor, not the type
+ Hash_t::Hash_t& operator-=(char data)
+ ^~~~~~
+Hash.cpp:68:1: error: ‘Hash_t::Hash_t’ names the constructor, not the type
+ Hash_t::Hash_t& operator-=(unsigned int data)
+ ^~~~~~
+Hash.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Hash_t&)’:
+Hash.cpp:76:9: error: ‘buckets’ was not declared in this scope
+  out << buckets.toString() << endl;
+         ^~~~~~~
+Hash.cpp:77:1: error: no return statement in function returning non-void [-Werror=return-type]
+ }
+ ^
+Hash.cpp: In member function ‘bool Hash_t::remove(unsigned int)’:
+Hash.cpp:81:10: error: request for member ‘find’ in ‘(Hash_t*)this’, which is of pointer type ‘Hash_t*’ (maybe you meant to use ‘->’ ?)
+  if(this.find(data) == true)
+          ^~~~
+Hash.cpp:83:11: error: ‘index’ was not declared in this scope
+   buckets[index][i].erase(data);
+           ^~~~~
+Hash.cpp:83:18: error: ‘i’ was not declared in this scope
+   buckets[index][i].erase(data);
+                  ^
+Hash.cpp: In member function ‘bool Hash_t::remove(char)’:
+Hash.cpp:93:1: error: no return statement in function returning non-void [-Werror=return-type]
+ }
+ ^
+Hash.cpp: In member function ‘bool Hash_t::insert(unsigned int)’:
+Hash.cpp:97:10: error: request for member ‘find’ in ‘(Hash_t*)this’, which is of pointer type ‘Hash_t*’ (maybe you meant to use ‘->’ ?)
+  if(this.find(data) == true)
+          ^~~~
+Hash.cpp:99:11: error: ‘index’ was not declared in this scope
+   buckets[index][i].push_back(data);
+           ^~~~~
+Hash.cpp:99:18: error: ‘i’ was not declared in this scope
+   buckets[index][i].push_back(data);
+                  ^
+Hash.cpp: In member function ‘bool Hash_t::insert(char)’:
+Hash.cpp:108:1: error: no return statement in function returning non-void [-Werror=return-type]
+ }
+ ^
+Hash.cpp: In member function ‘bool Hash_t::find(char)’:
+Hash.cpp:126:1: error: no return statement in function returning non-void [-Werror=return-type]
+ }
+ ^
+Hash.cpp: In member function ‘size_t Hash_t::size() const’:
+Hash.cpp:196:14: error: request for member ‘size’ in ‘(const Hash_t*)this’, which is of pointer type ‘const Hash_t*’ (maybe you meant to use ‘->’ ?)
+  return this.size;
+              ^~~~
+Hash.cpp: In member function ‘size_t Hash_t::getIndex(char) const’:
+Hash.cpp:201:19: error: ‘const class Hash_t’ has no member named ‘hashfunction’; did you mean ‘hashfunc’?
+     return (this->hashfunction(data, sizeof(char))%bucketSize);
+                   ^~~~~~~~~~~~
+                   hashfunc
+Hash.cpp: In member function ‘size_t Hash_t::getIndex(unsigned int) const’:
+Hash.cpp:206:16: error: ‘const class Hash_t’ has no member named ‘hashfunction’; did you mean ‘hashfunc’?
+  return (this->hashfunction(data, sizeof(unsigned int))%bucketSize);
+                ^~~~~~~~~~~~
+                hashfunc
+Hash.cpp: In function ‘int basic_hash(void*, size_t)’:
+Hash.cpp:222:1: error: no return statement in function returning non-void [-Werror=return-type]
+ }
+ ^
+cc1plus: all warnings being treated as errors

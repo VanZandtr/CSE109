@@ -1,0 +1,69 @@
+/*
+CSE 109: Spring 2018
+Raymond Van Zandt
+rlv220
+Node's constructor file with prototypes.
+Program #3
+*/
+
+#ifndef ALLOCATOR_H
+#define ALLOCATOR_H
+
+#include<stdio.h>
+
+struct Allocator_t
+{
+	size_t allocationSum;
+    void* memory;
+    size_t capacity;
+	Allocation_t** allocationList;
+	size_t sizeList;
+	size_t capacityList;
+/*
+	     if(size == capacity)
+        {
+            //numbers is full
+            size_t newCapacity = (capacity + 1) * 2;
+            int* temp = (int *)malloc(newCapacity * sizeof(int));
+            for(size_t i=0; i<size; i++)
+            {
+                temp[i] = numbers[i];
+            }
+            free(numbers);
+            numbers = temp;
+            temp = NULL;
+            fprintf(stderr, "Expanded from %ld to %ld\n", capacity, newCapacity);
+            capacity = newCapacity;
+        }
+
+        numbers[size] = userInput;
+        size++;
+    }
+*/
+};
+
+
+void makeAllocator(struct Allocator_t* it, size_t capacity);
+
+void freeAllocator(struct Allocator_t* it);
+
+void* allocate(struct Allocator_t* it, size_t amt);
+
+void deallocate(struct Allocator_t* it, void* ptr);
+
+void* getBase(struct Allocator_t* it);
+
+size_t getUsed(struct Allocator_t* it);
+
+size_t getCapacity(struct Allocator_t* it);
+
+void printAllocations(struct Allocator_t* it, FILE* fd);
+
+struct Allocation_t* getAllocation(struct Allocator_t* it, size_t index);
+
+size_t numAllocations(struct Allocator_t* it);
+
+void* riskyAlloc(struct Allocator_t*, size_t size);
+#endif
+
+

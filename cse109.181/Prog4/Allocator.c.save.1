@@ -1,0 +1,144 @@
+#include "Allocator.h";
+#include <stdlib.h>
+
+void makeAllocator(struct Allocator_t* it, size_t capacity);
+{
+	if(capacity%16 != 0)
+	{
+		capacity += 16 - (capacity%16);
+	}
+
+	it->memory = (void*)malloc(capacity);
+	it->allocationSum  = 0;
+	it->capacity = capacity;
+	it->allocationList = NULL;
+	it->sizeList = 0;
+	it->capacityList = 0;
+}
+
+void freeAllocator(struct Allocator_t* it);
+{
+	for(size_t i = 0; i<sizeList; i++)
+	{
+		freeAllocation(allocationList[i]);
+	}
+	free(it->allocationList);
+	free(it->memory);
+	free(it);
+}
+
+struct Allocation_t** addToList(struct Allocation_t** list, size_t* listSize, size_t* listCapacity, struct Allocation_t* newAllocation)
+{
+	if(listSize == listCapacity)
+	{
+            size_t newCapacity = (listCapacity *2)+1;
+            struct Allocation_t** temp = (struct Allocation_t**)malloc(newCapacity * sizeof(struct Allocation_t*));
+            for(size_t i=0; i<listSize; i++)
+            {
+                temp[i] = list[i];
+            }
+            free(list);
+            list = temp;
+            temp = NULL;
+            capacity = newCapacity;
+	}
+	list[*listSize] = newAllocation;
+	*listSize++;
+	return list;
+}
+
+void* allocate(struct Allocator_t* it, size_t amt);
+{
+ 	if(amt%16 != 0)
+    {
+        amt+= 16 - (amt%16);
+    }
+
+	if(amt>it->capcaity - it->allocationSum)
+	{
+		return NULL;
+	}
+	struct Allocation_t* newAllocation = (void*)malloc(sizeof(void));
+	for(size_t i = 0; i< it->capacity; i= i +16)
+	{
+		if(doesOverlap(values??? == 0)// matches
+		{
+			makeAllocation(newAllocation, i, amt);
+            addToList(it->allocationList, &(it->sizeList), &(it->capacityList), newAllocation);
+            it->allocationSum = it->allocationSum + newAllocation->size;
+		}
+		else(does not fit..... then what?)
+		{
+
+
+		}
+	}
+
+	if(alloction tracked)
+	{
+		return void* ptr;
+	}
+	//these statments go in for loops
+	//	struct Allocation_t* newAllocation = (void*)malloc(sizeof(void));
+	//	makeAllocation(newAllocation, 0, amt);
+    //	addToList(it->allocationList, &(it->sizeList), &(it->capacityList), newAllocation);
+    //	it->allocationSum = it->allocationSum + newAllocation->size;
+    	return it->memory;
+
+	}
+	return NULL;// else return null
+}
+
+void deallocate(struct Allocator_t* it, void* ptr);
+{
+	if(ptr == NULL)
+	{
+		//ignore
+		return;
+	}
+	for(size_t i = 0; i< it->sizeList; i++)
+	{
+		if(ptr == allocationList[i])
+		{
+			free(allocationList[i]);
+			allocationList[i] = NULL;
+			return;
+		}
+	}
+	fprintf(stderr,"Corruption in free.");
+	exit(1);
+}
+
+void* getBase(struct Allocator_t* it);
+{
+	return &it;//?
+}
+
+size_t getUsed(struct Allocator_t* it);
+{
+	return it->allocationSum;
+}
+
+size_t getCapacity(struct Allocator_t* it);
+{
+	return it->Capacity;
+}
+
+struct Allocation_t* getAllocation(struct Allocator_t* it, size_t index);
+{
+	if(index > it->size)
+	{
+		return NULL;
+	}
+	return it->allocationList[index];
+}
+
+size_t numAllocations(struct Allocator_t* it);
+{
+	return it->sizeList;
+}
+
+void* riskyAlloc(struct Allocator_t*, size_t size)
+{
+	//same as allocate but with realloc?
+}
